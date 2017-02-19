@@ -1,0 +1,64 @@
+scheme: "Sonho"
+author: "Protesilaos Stavrou (https://protesilaos.com/sonho)"
+
+# Colour values
+valuedbg: "4A3638" # Dark background
+valuedhl: "5A4648" # Dark highlight
+valuedt2: "8A7678" # Dark bg text secondary
+valuedt1: "BAA6A8" # Dark bg text primary
+valuelbg: "FFF0F2" # Light background
+valuelhl: "EFE0E2" # Light highlight
+valuelt2: "8F8082" # Light bg text secondary
+valuelt1: "5F5052" # Light bg text primary
+valuered: "CD4679" # Red
+valueora: "D9766D" # Orange
+valueyel: "D9A652" # Yellow
+valuegre: "11BF8C" # Green
+valuecya: "5FB8B4" # Cyan
+valueblu: "479CB5" # Blue
+valuevio: "A77CCF" # Violet
+valuemag: "DD619F" # Magenta
+
+# Visual order used for colour mapping
+valuep1: "DD619F" # Magenta
+valuep2: "5FB8B4" # Cyan
+valuep3: "D9A652" # Yellow
+values1: "D9766D" # Orange
+values2: "A77CCF" # Violet
+valuet1: "479CB5" # Blue
+valuet2: "11BF8C" # Green
+valuet3: "CD4679" # Red
+
+# IMPORTANT Terminal values follow this sequence in the relevant templates:
+# 0=dhl; 1=red; 2=gre; 3=yel; 4=blu; 5=mag; 6=cya; 7=lhl;
+# 8=dbg; 9=ora; 10=lt1; 11=dt2; 12=lt2; 13=vio; 14=dt1; 15=lbg.
+# Based on the colour mapping of Solarized for terminals such those of GNOME and XFCE4.
+
+# Terminal codes for colour values
+# This presupposes that the terminal sequence is followed
+valuecdbg: "8"
+valuecdhl: "0"
+valuecdt2: "11"
+valuecdt1: "14"
+valueclbg: "15"
+valueclhl: "7"
+valueclt2: "12"
+valueclt1: "10"
+valuecred: "1"
+valuecora: "9"
+valuecyel: "3"
+valuecgre: "2"
+valueccya: "6"
+valuecblu: "4"
+valuecvio: "13"
+valuecmag: "5"
+
+# Terminal accent colours corresponding to the visual order
+valuecp1: "5"
+valuecp2: "6"
+valuecp3: "3"
+valuecs1: "9"
+valuecs2: "13"
+valuect1: "4"
+valuect2: "2"
+valuect3: "1"

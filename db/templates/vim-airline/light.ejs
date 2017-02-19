@@ -1,0 +1,76 @@
+" vim-airline template by chartoin (http://github.com/chartoin)
+" <%- scheme %> light by <%- author %>
+" Part of the Prot16 collection (https://protesilaos.com/schemes)
+" The variant (light/dark) has an _ underscore. Dash does not work.
+
+let g:airline#themes#<%- schemeSlug %>_light#palette = {}
+let s:guidbg = "#<%- value["dbg"]["hex"] %>"
+let s:guidhl = "#<%- value["dhl"]["hex"] %>"
+let s:guilt1 = "#<%- value["lt1"]["hex"] %>"
+let s:guidt2 = "#<%- value["dt2"]["hex"] %>"
+let s:guilt2 = "#<%- value["lt2"]["hex"] %>"
+let s:guidt1 = "#<%- value["dt1"]["hex"] %>"
+let s:guilhl = "#<%- value["lhl"]["hex"] %>"
+let s:guilbg = "#<%- value["lbg"]["hex"] %>"
+let s:guired = "#<%- value["red"]["hex"] %>"
+let s:guiora = "#<%- value["ora"]["hex"] %>"
+let s:guiyel = "#<%- value["yel"]["hex"] %>"
+let s:guigre = "#<%- value["gre"]["hex"] %>"
+let s:guicya = "#<%- value["cya"]["hex"] %>"
+let s:guiblu = "#<%- value["blu"]["hex"] %>"
+let s:guivio = "#<%- value["vio"]["hex"] %>"
+let s:guimag = "#<%- value["mag"]["hex"] %>"
+
+let s:ctermdbg = <%- value["cdbg"]["hex"] %>
+let s:ctermdhl = <%- value["cdhl"]["hex"] %>
+let s:ctermlt1 = <%- value["clt1"]["hex"] %>
+let s:ctermdt2 = <%- value["cdt2"]["hex"] %>
+let s:ctermlt2 = <%- value["clt2"]["hex"] %>
+let s:ctermdt1 = <%- value["cdt1"]["hex"] %>
+let s:ctermlhl = <%- value["clhl"]["hex"] %>
+let s:ctermlbg = <%- value["clbg"]["hex"] %>
+let s:ctermred = <%- value["cred"]["hex"] %>
+let s:ctermora = <%- value["cora"]["hex"] %>
+let s:ctermyel = <%- value["cyel"]["hex"] %>
+let s:ctermgre = <%- value["cgre"]["hex"] %>
+let s:ctermcya = <%- value["ccya"]["hex"] %>
+let s:ctermblu = <%- value["cblu"]["hex"] %>
+let s:ctermvio = <%- value["cvio"]["hex"] %>
+let s:ctermmag = <%- value["cmag"]["hex"] %>
+
+let s:N1   = [ s:guilhl, s:guigre, s:ctermlhl, s:ctermgre ]
+let s:N2   = [ s:guidhl, s:guidt1, s:ctermdhl, s:ctermdt1 ]
+let s:N3   = [ s:guiora, s:guilhl, s:ctermora, s:ctermlhl ]
+let g:airline#themes#<%- schemeSlug %>_light#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+
+let s:I1   = [ s:guilhl, s:guiblu, s:ctermlhl, s:ctermblu ]
+let s:I2   = [ s:guidhl, s:guidt1, s:ctermdhl, s:ctermdt1 ]
+let s:I3   = [ s:guiora, s:guilhl, s:ctermora, s:ctermlhl ]
+let g:airline#themes#<%- schemeSlug %>_light#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+
+let s:R1   = [ s:guilhl, s:guired, s:ctermlhl, s:ctermred ]
+let s:R2   = [ s:guidhl, s:guidt1, s:ctermdhl, s:ctermdt1 ]
+let s:R3   = [ s:guiora, s:guilhl, s:ctermora, s:ctermlhl ]
+let g:airline#themes#<%- schemeSlug %>_light#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+
+let s:V1   = [ s:guilhl, s:guivio, s:ctermlhl, s:ctermvio ]
+let s:V2   = [ s:guidhl, s:guidt1, s:ctermdhl, s:ctermdt1 ]
+let s:V3   = [ s:guiora, s:guilhl, s:ctermora, s:ctermlhl ]
+let g:airline#themes#<%- schemeSlug %>_light#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+
+let s:IA1   = [ s:guilt1, s:guilhl, s:ctermlt1, s:ctermlhl ]
+let s:IA2   = [ s:guilt1, s:guilhl, s:ctermlt1, s:ctermlhl ]
+let s:IA3   = [ s:guilt1, s:guilhl, s:ctermlt1, s:ctermlhl ]
+let g:airline#themes#<%- schemeSlug %>_light#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
+
+" Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
+" variable so that related functionality is loaded iff the user is using
+" ctrlp. Note that this is optional, and if you do not define ctrlp colors
+" they will be chosen automatically from the existing palette.
+if !get(g:, 'loaded_ctrlp', 0)
+  finish
+endif
+let g:airline#themes#<%- schemeSlug %>_light#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
+      \ [ s:guilbg, s:guilt1, s:ctermlbg, s:ctermlt1, '' ],
+      \ [ s:guilbg, s:guilt2, s:ctermlbg, s:ctermlt2, '' ],
+\ [ s:guidt1, s:guidhl, s:ctermdt1, s:ctermdhl, 'bold' ])
