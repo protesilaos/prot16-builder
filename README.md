@@ -4,14 +4,14 @@
 
 **EXPERIMENTAL. May undergo significant changes. Documentation will be provided accordingly.**
 
-This is a fork of [the Base16 Builder](https://github.com/base16-builder/base16-builder). I have repurposed it to fit my specific need of building ports for my [Prot16 collection](https://protesilaos.com/schemes).
+This is a fork of [the Base16 Builder](https://github.com/base16-builder/base16-builder). I have repurposed it to fit my specific need to building ports for my [Prot16 collection](https://protesilaos.com/schemes) of colour schemes.
 
-This builder performs two tasks:
+This tool performs two tasks:
 
 1. automate the production of themes for various applications;
 2. provide themes on demand on a per item basis.
 
-## What this tool is not
+## What this is not
 
 Prot16 Builder does not stand as a replacement or substitute of any of the projects related to Base16. Its only purpose is to work with my colour schemes.
 
