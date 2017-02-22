@@ -1,7 +1,7 @@
 " Name: <%- scheme %> dark
 " Author: Protesilaos Stavrou <public@protesilaos.com>
 " URL: https://protesilaos.com/<%- schemeSlug %>
-" Version: 0.0.1.alpha-20170219
+" Version: 0.0.1.alpha-20170222
 " Note: This is an early version. May undergo significant changes.
 
 set background=dark
@@ -16,7 +16,7 @@ let g:colors_name = "<%- schemeSlug %>-dark"
 hi Normal guibg=#<%- value["dbg"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> ctermbg=none ctermfg=<%- value["cdt1"]["hex"] %>
 
 hi Comment gui=italic guifg=#<%- value["dt2"]["hex"] %> cterm=italic ctermfg=<%- value["cdt2"]["hex"] %>
-hi Todo gui=bold guifg=#<%- value["t1"]["hex"] %> cterm=bold ctermfg=<%- value["ct1"]["hex"] %>
+hi Todo gui=bold guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["t1"]["hex"] %> cterm=bold ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
 
 hi Warning gui=bold guibg=#<%- value["yel"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> cterm=bold ctermbg=<%- value["cyel"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 hi Error gui=bold guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> cterm=bold ctermbg=<%- value["cred"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
@@ -63,16 +63,18 @@ hi Delimeter guifg=#<%- value["dt1"]["hex"] %> ctermfg=<%- value["cdt1"]["hex"] 
 hi SpecialComment gui=bold guifg=#<%- value["t2"]["hex"] %> cterm=bold ctermfg=<%- value["ct2"]["hex"] %>
 hi Debug guifg=#<%- value["t3"]["hex"] %>
 
-hi LineNr guifg=#<%- value["lt1"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
+" Other
+" -----------------
+hi LineNr guifg=#<%- value["dt2"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
 hi Cursor guifg=#<%- value["dt1"]["hex"] %> ctermfg=<%- value["cdt1"]["hex"] %>
-hi CursorLine guibg=#<%- value["lt1"]["hex"] %> ctermbg=<%- value["clt1"]["hex"] %>
+hi CursorLine guibg=#<%- value["dt2"]["hex"] %> ctermbg=<%- value["cdt2"]["hex"] %>
 hi CursorLineNr gui=bold guifg=#<%- value["lt2"]["hex"] %> cterm=bold ctermfg=<%- value["clt2"]["hex"] %>
-hi ColorColumn guibg=#<%- value["lt1"]["hex"] %> ctermbg=<%- value["clt1"]["hex"] %>
+hi ColorColumn guibg=#<%- value["dt2"]["hex"] %> ctermbg=<%- value["cdt2"]["hex"] %>
 
 hi Folded guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 
-hi NonText guifg=#<%- value["lt1"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
-hi SpecialKey guifg=#<%- value["lt1"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
+hi NonText guifg=#<%- value["dt2"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
+hi SpecialKey guifg=#<%- value["dt2"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
 
 hi Directory guifg=#<%- value["p1"]["hex"] %> ctermfg=<%- value["cp1"]["hex"] %>
 hi SpecialKey guifg=#<%- value["t1"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
@@ -83,6 +85,8 @@ hi VimGroup guifg=#<%- value["p1"]["hex"] %> ctermfg=<%- value["cp1"]["hex"] %>
 hi Underlined guifg=#<%- value["s1"]["hex"] %> ctermfg=<%- value["cs1"]["hex"] %>
 hi Ignore guifg=#<%- value["t2"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
 
+" Diffs
+" -----------------
 hi DiffAdd guibg=#<%- value["gre"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cgre"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 hi DiffDelete gui=bold guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cred"]["hex"] %> cterm=bold ctermfg=<%- value["clbg"]["hex"] %>
 hi DiffChange guibg=#<%- value["ora"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cora"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
