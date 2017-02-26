@@ -67,8 +67,8 @@ hi Debug guifg=#<%- value["t3"]["hex"] %>
 " -----------------
 hi LineNr guifg=#<%- value["lt2"]["hex"] %> ctermfg=<%- value["clt2"]["hex"] %>
 hi Cursor guifg=#<%- value["lt1"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
-hi CursorLine guibg=#<%- value["lt2"]["hex"] %> ctermbg=<%- value["clt2"]["hex"] %>
-hi CursorLineNr gui=bold guifg=#<%- value["dt2"]["hex"] %> cterm=bold ctermfg=<%- value["cdt2"]["hex"] %>
+hi CursorLine gui=none guibg=#<%- value["lhl"]["hex"] %> cterm=none ctermbg=<%- value["clhl"]["hex"] %>
+hi CursorLineNr gui=bold guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dt2"]["hex"] %> cterm=bold ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
 hi ColorColumn guibg=#<%- value["lt2"]["hex"] %> ctermbg=<%- value["clt2"]["hex"] %>
 
 hi Folded guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
