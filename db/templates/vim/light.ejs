@@ -16,10 +16,10 @@ let g:colors_name = "<%- schemeSlug %>_light"
 hi Normal guibg=#<%- value["lbg"]["hex"] %> guifg=#<%- value["lt1"]["hex"] %> ctermbg=none ctermfg=<%- value["clt1"]["hex"] %>
 
 hi Comment gui=italic guifg=#<%- value["lt2"]["hex"] %> cterm=italic ctermfg=<%- value["clt2"]["hex"] %>
-hi Todo gui=bold guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["t1"]["hex"] %> cterm=bold ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
+hi Todo gui=none guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["t1"]["hex"] %> cterm=none ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
 
-hi Warning gui=bold guibg=#<%- value["yel"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> cterm=bold ctermbg=<%- value["cyel"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
-hi Error gui=bold guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> cterm=bold ctermbg=<%- value["cred"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
+hi Warning gui=none guibg=#<%- value["yel"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> cterm=none ctermbg=<%- value["cyel"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
+hi Error gui=none guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> cterm=none ctermbg=<%- value["cred"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
 
 " Constructs
 " -----------------
@@ -60,7 +60,7 @@ hi Special guifg=#<%- value["s2"]["hex"] %> ctermfg=<%- value["cs2"]["hex"] %>
 hi SpecialChar guifg=#<%- value["t1"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
 hi Tag guifg=#<%- value["p2"]["hex"] %> ctermfg=<%- value["cp2"]["hex"] %>
 hi Delimeter guifg=#<%- value["lt1"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
-hi SpecialComment gui=bold guifg=#<%- value["t2"]["hex"] %> cterm=bold ctermfg=<%- value["ct2"]["hex"] %>
+hi SpecialComment gui=none guifg=#<%- value["t2"]["hex"] %> cterm=none ctermfg=<%- value["ct2"]["hex"] %>
 hi Debug guifg=#<%- value["t3"]["hex"] %>
 
 " Other
@@ -68,7 +68,7 @@ hi Debug guifg=#<%- value["t3"]["hex"] %>
 hi LineNr guifg=#<%- value["lt2"]["hex"] %> ctermfg=<%- value["clt2"]["hex"] %>
 hi Cursor guifg=#<%- value["lt1"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
 hi CursorLine gui=none guibg=#<%- value["lhl"]["hex"] %> cterm=none ctermbg=<%- value["clhl"]["hex"] %>
-hi CursorLineNr gui=bold guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dt2"]["hex"] %> cterm=bold ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
+hi CursorLineNr gui=none guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dt2"]["hex"] %> cterm=none ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
 hi ColorColumn guibg=#<%- value["lt2"]["hex"] %> ctermbg=<%- value["clt2"]["hex"] %>
 
 hi Folded guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
@@ -88,11 +88,11 @@ hi Ignore guifg=#<%- value["t2"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
 " Diffs
 " -----------------
 hi DiffAdd guibg=#<%- value["gre"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["cgre"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
-hi DiffDelete gui=bold guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["cred"]["hex"] %> cterm=bold ctermfg=<%- value["cdbg"]["hex"] %>
+hi DiffDelete gui=none guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["cred"]["hex"] %> cterm=none ctermfg=<%- value["cdbg"]["hex"] %>
 hi DiffChange guibg=#<%- value["ora"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["cora"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
-hi DiffText gui=bold guibg=#<%- value["mag"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> cterm=bold ctermbg=<%- value["cmag"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
+hi DiffText gui=none guibg=#<%- value["mag"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> cterm=none ctermbg=<%- value["cmag"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
 
 hi diffAdded guifg=#<%- value["gre"]["hex"] %> ctermfg=<%- value["cgre"]["hex"] %>
 hi diffRemoved guifg=#<%- value["red"]["hex"] %> ctermfg=<%- value["cred"]["hex"] %>
-hi diffNewFile gui=bold guifg=#<%- value["blu"]["hex"] %> ctermfg=<%- value["cblu"]["hex"] %>
-hi diffFile gui=bold guifg=#<%- value["yel"]["hex"] %> cterm=bold ctermfg=<%- value["cyel"]["hex"] %>
+hi diffNewFile gui=none guifg=#<%- value["blu"]["hex"] %> ctermfg=<%- value["cblu"]["hex"] %>
+hi diffFile gui=none guifg=#<%- value["yel"]["hex"] %> cterm=none ctermfg=<%- value["cyel"]["hex"] %>
