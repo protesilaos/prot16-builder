@@ -14,12 +14,16 @@ let g:colors_name = "<%- schemeSlug %>_dark"
 " General
 " -----------------
 hi Normal guibg=#<%- value["dbg"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> ctermbg=none ctermfg=<%- value["cdt1"]["hex"] %>
+hi Visual guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["cdt1"]["hex"] %>
+hi Search guibg=#<%- value["cya"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["ccya"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 
 hi Comment gui=italic guifg=#<%- value["dt2"]["hex"] %> cterm=italic ctermfg=<%- value["cdt2"]["hex"] %>
 hi Todo gui=none guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["t1"]["hex"] %> cterm=none ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
 
 hi Warning gui=none guibg=#<%- value["yel"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> cterm=none ctermbg=<%- value["cyel"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 hi Error gui=none guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> cterm=none ctermbg=<%- value["cred"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+
+hi MatchParen guibg=#<%- value["cya"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["ccya"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 
 " Constructs
 " -----------------
@@ -84,6 +88,11 @@ hi VimOption guifg=#<%- value["p3"]["hex"] %> ctermfg=<%- value["cp3"]["hex"] %>
 hi VimGroup guifg=#<%- value["p1"]["hex"] %> ctermfg=<%- value["cp1"]["hex"] %>
 hi Underlined guifg=#<%- value["s1"]["hex"] %> ctermfg=<%- value["cs1"]["hex"] %>
 hi Ignore guifg=#<%- value["t2"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
+
+hi SpellBad guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cred"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+hi SpellCap guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+hi SpellRare guibg=#<%- value["vio"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cvio"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+hi SpellLocal guibg=#<%- value["cya"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["ccya"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 
 " Diffs
 " -----------------
