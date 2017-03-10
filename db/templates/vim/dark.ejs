@@ -14,7 +14,7 @@ let g:colors_name = "<%- schemeSlug %>_dark"
 " General
 " -----------------
 hi Normal guibg=#<%- value["dbg"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> ctermbg=none ctermfg=<%- value["cdt1"]["hex"] %>
-hi Visual guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["cdt1"]["hex"] %>
+hi Visual guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["lt1"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
 hi Search guibg=#<%- value["cya"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["ccya"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 
 hi Comment gui=italic guifg=#<%- value["dt2"]["hex"] %> cterm=italic ctermfg=<%- value["cdt2"]["hex"] %>
