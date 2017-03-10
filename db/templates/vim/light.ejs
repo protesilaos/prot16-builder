@@ -1,8 +1,7 @@
 " Name: <%- scheme %> light
 " Author: Protesilaos Stavrou <public@protesilaos.com>
 " URL: https://protesilaos.com/<%- schemeSlug %>
-" Version: 0.0.1.alpha-20170226
-" Note: This is an early version. May undergo significant changes.
+" Version: 0.1.0.beta-20170310
 
 set background=light
 hi clear
@@ -76,6 +75,7 @@ hi CursorLineNr gui=none guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dt2
 hi ColorColumn guibg=#<%- value["lt2"]["hex"] %> ctermbg=<%- value["clt2"]["hex"] %>
 
 hi Folded guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
+hi FoldColumn guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
 
 hi NonText guifg=#<%- value["lt2"]["hex"] %> ctermfg=<%- value["clt2"]["hex"] %>
 hi SpecialKey guifg=#<%- value["lt2"]["hex"] %> ctermfg=<%- value["clt2"]["hex"] %>
@@ -93,6 +93,10 @@ hi SpellBad guibg=#<%- value["red"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> 
 hi SpellCap guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
 hi SpellRare guibg=#<%- value["vio"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cvio"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
 hi SpellLocal guibg=#<%- value["cya"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["ccya"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+
+hi Pmenu guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["dbg"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["cdbg"]["hex"] %>
+hi PmenuSel guibg=#<%- value["yel"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["cyel"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+hi PmenuSbar guibg=#<%- value["lt2"]["hex"] %> ctermbg=<%- value["clt2"]["hex"] %>
 
 " Diffs
 " -----------------
