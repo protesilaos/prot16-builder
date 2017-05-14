@@ -1,7 +1,7 @@
 " Name: <%- scheme %> dark
 " Author: Protesilaos Stavrou <public@protesilaos.com>
 " URL: https://protesilaos.com/<%- schemeSlug %>
-" Version: 0.1.0.beta-20170310
+" Version: 0.2.0.beta-20170514
 
 set background=dark
 hi clear
@@ -15,6 +15,13 @@ let g:colors_name = "<%- schemeSlug %>_dark"
 hi Normal guibg=#<%- value["dbg"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> ctermbg=none ctermfg=<%- value["cdt1"]["hex"] %>
 hi Visual guibg=#<%- value["lhl"]["hex"] %> guifg=#<%- value["lt1"]["hex"] %> ctermbg=<%- value["clhl"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
 hi Search guibg=#<%- value["cya"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> ctermbg=<%- value["ccya"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+
+hi StatusLine gui=none,bold guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["dt1"]["hex"] %> cterm=none,bold ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["cdt1"]["hex"] %>
+hi StatusLineNC gui=none guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["lt1"]["hex"] %> cterm=none ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["clt1"]["hex"] %>
+hi VertSplit gui=none cterm=none
+hi TabLine gui=none guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["dt2"]["hex"] %> cterm=none ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["cdt2"]["hex"] %>
+hi TabLineSel gui=none guibg=#<%- value["blu"]["hex"] %> guifg=#<%- value["lbg"]["hex"] %> cterm=none ctermbg=<%- value["cblu"]["hex"] %> ctermfg=<%- value["clbg"]["hex"] %>
+hi TabLineFill gui=none cterm=none
 
 hi Comment gui=italic guifg=#<%- value["dt2"]["hex"] %> cterm=italic ctermfg=<%- value["cdt2"]["hex"] %>
 hi Todo gui=none guibg=#<%- value["dhl"]["hex"] %> guifg=#<%- value["t1"]["hex"] %> cterm=none ctermbg=<%- value["cdhl"]["hex"] %> ctermfg=<%- value["ct1"]["hex"] %>
