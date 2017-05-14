@@ -1,6 +1,6 @@
 {
   "name": "prot16-builder",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A builder for the Prot16 collection of colour schemes.",
   "repository": "protesilaos/prot16-builder",
   "main": "dist/index.js",
