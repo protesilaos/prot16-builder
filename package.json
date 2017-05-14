@@ -10,9 +10,6 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist && cp -R db/ dist/db",
-    "test": "ava tests --require babel-register",
-    "testw": "nodemon --watch lib --watch tests --exec npm run test",
-    "pretest": "npm run build",
     "build": "node util/schemesPreviewGenerator.js && babel lib --out-dir dist && chmod +x dist/cli.js",
     "prepublish": "npm run build",
     "commit": "git-cz"
@@ -51,13 +48,5 @@
     "meow": "^3.7.0",
     "open": "0.0.5",
     "update-notifier": "^0.6.2"
-  },
-  "config": {
-    "ghooks": {
-      "pre-commit": "npm run test"
-    },
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
