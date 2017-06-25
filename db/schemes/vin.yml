@@ -2,19 +2,18 @@ scheme: "Vin"
 author: "Protesilaos Stavrou (https://protesilaos.com/vin)"
 
 # Colour values
-valuedbg: "101D04" # Dark background
-valuedhl: "202D14" # Dark highlight
-valuedt2: "606D54" # Dark bg text secondary
-valuedt1: "B0BDA4" # Dark bg text primary
-valuelbg: "EFFDD4" # Light background
-valuelhl: "DFEDC4" # Light highlight
-valuelt2: "7F8D64" # Light bg text secondary
+valuedbg: "181A28" # Dark background
+valuedhl: "282A38" # Dark highlight
+valuedt2: "626442" # Dark bg text secondary
+valuedt1: "6D8476" # Dark bg text primary
+valuelbg: "F0F2EA" # Light background
+valuelhl: "E0E2DA" # Light highlight
+valuelt2: "727584" # Light bg text secondary
 valuelt1: "3F4D24" # Light bg text primary
 valuered: "A3415C" # Red
 valueora: "8D522D" # Orange
 valueyel: "7D851D" # Yellow
 valuegre: "487D14" # Green
-valuecya: "13865A" # Cyan
 valueblu: "5A5DA8" # Blue
 valuevio: "8858A5" # Violet
 valuemag: "AC587A" # Magenta
