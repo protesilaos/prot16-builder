@@ -2,32 +2,32 @@ scheme: "Symbiosis"
 author: "Protesilaos Stavrou (https://protesilaos.com/symbiosis)"
 
 # Colour values
-valuedbg: "111D1C" # Dark background
-valuedhl: "212D2C" # Dark highlight
-valuedt2: "616D6C" # Dark bg text secondary
-valuedt1: "A1ADAC" # Dark bg text primary
-valuelbg: "FCFAF9" # Light background
-valuelhl: "ECEAE9" # Light highlight
-valuelt2: "8C8A89" # Light bg text secondary
-valuelt1: "4C4A49" # Light bg text primary
-valuered: "B95846" # Red
-valueora: "A87226" # Orange
-valueyel: "A89641" # Yellow
+valuedbg: "111d1c" # Dark background
+valuedhl: "212d2c" # Dark highlight
+valuedt2: "58623b" # Dark bg text secondary
+valuedt1: "79988b" # Dark bg text primary
+valuelbg: "fcfaf9" # Light background
+valuelhl: "eceae9" # Light highlight
+valuelt2: "828cad" # Light bg text secondary
+valuelt1: "3c513d" # Light bg text primary
+valuered: "b95846" # Red
+valueora: "a87226" # Orange
+valueyel: "a89641" # Yellow
 valuegre: "669824" # Green
-valuecya: "48A597" # Cyan
-valueblu: "3D8CAD" # Blue
-valuevio: "9166AB" # Violet­­
-valuemag: "BB7EAA" # Magenta
+valuecya: "28a597" # Cyan
+valueblu: "3d8cad" # Blue
+valuevio: "9166ab" # Violet
+valuemag: "bb7eaa" # Magenta
 
 # Visual order used for colour mapping
-valuep1: "9166AB" # Violet­­
-valuep2: "B95846" # Red
-valuep3: "48A597" # Cyan
-values1: "3D8CAD" # Blue
-values2: "A87226" # Orange
+valuep1: "9166ab" # Violet­­
+valuep2: "b95846" # Red
+valuep3: "28a597" # Cyan
+values1: "3d8cad" # Blue
+values2: "a87226" # Orange
 valuet1: "669824" # Green
-valuet2: "A89641" # Yellow
-valuet3: "BB7EAA" # Magenta
+valuet2: "a89641" # Yellow
+valuet3: "bb7eaa" # Magenta
 
 # IMPORTANT Terminal values follow this sequence in the relevant templates:
 # 0=dhl; 1=red; 2=gre; 3=yel; 4=blu; 5=mag; 6=cya; 7=lhl;
