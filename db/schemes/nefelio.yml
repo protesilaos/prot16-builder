@@ -4,30 +4,30 @@ author: "Protesilaos Stavrou (https://protesilaos.com/nefelio)"
 # Colour values
 valuedbg: "282326" # Dark background
 valuedhl: "383336" # Dark highlight
-valuedt2: "686366" # Dark bg text secondary
-valuedt1: "989396" # Dark bg text primary
-valuelbg: "EAEFF2" # Light background
-valuelhl: "DADFE2" # Light highlight
-valuelt2: "9A9FA2" # Light bg text secondary
-valuelt1: "6A6F72" # Light bg text primary
-valuered: "BA3D5A" # Red
-valueora: "CA6F5F" # Orange
-valueyel: "CA9E5D" # Yellow
-valuegre: "1CB57A" # Green
-valuecya: "34B7BD" # Cyan
-valueblu: "3F8EDA" # Blue
-valuevio: "956CDA" # Violet
-valuemag: "C34D95" # Magenta
+valuedt2: "686356" # Dark bg text secondary
+valuedt1: "82a3a6" # Dark bg text primary
+valuelbg: "eaeff2" # Light background
+valuelhl: "dadfe2" # Light highlight
+valuelt2: "7a8fa2" # Light bg text secondary
+valuelt1: "5a6662" # Light bg text primary
+valuered: "ba3d5a" # Red
+valueora: "ca6f5f" # Orange
+valueyel: "ca9e5d" # Yellow
+valuegre: "1cb57a" # Green
+valuecya: "34b7bd" # Cyan
+valueblu: "3f8eda" # Blue
+valuevio: "956cda" # Violet
+valuemag: "c34d95" # Magenta
 
 # Visual order used for colour mapping
-valuep1: "C34D95" # Magenta
-valuep2: "1CB57A" # Green
-valuep3: "34B7BD" # Cyan
-values1: "3F8EDA" # Blue
-values2: "956CDA" # Violet
-valuet1: "CA6F5F" # Orange
-valuet2: "CA9E5D" # Yellow
-valuet3: "BA3D5A" # Red
+valuep1: "c34d95" # Magenta
+valuep2: "1cb57a" # Green
+valuep3: "34b7bd" # Cyan
+values1: "3f8eda" # Blue
+values2: "956cda" # Violet
+valuet1: "ca6f5f" # Orange
+valuet2: "ca9e5d" # Yellow
+valuet3: "ba3d5a" # Red
 
 # IMPORTANT Terminal values follow this sequence in the relevant templates:
 # 0=dhl; 1=red; 2=gre; 3=yel; 4=blu; 5=mag; 6=cya; 7=lhl;
