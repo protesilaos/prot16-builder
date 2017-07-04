@@ -2,32 +2,32 @@ scheme: "Ocarina"
 author: "Protesilaos Stavrou (https://protesilaos.com/ocarina)"
 
 # Colour values
-valuedbg: "212C2D" # Dark background
-valuedhl: "313C3D" # Dark highlight
-valuedt2: "616C6D" # Dark bg text secondary
-valuedt1: "919C9D" # Dark bg text primary
-valuelbg: "EBEBE7" # Light background
-valuelhl: "DBDBD7" # Light highlight
-valuelt2: "9B9B97" # Light bg text secondary
-valuelt1: "6B6B67" # Light bg text primary
-valuered: "BA6F5B" # Red
-valueora: "A2853A" # Orange
-valueyel: "93A34A" # Yellow
-valuegre: "3D9D54" # Green
-valuecya: "48A99B" # Cyan
-valueblu: "2AA2A5" # Blue
-valuevio: "7A99BA" # Violet
-valuemag: "A77B9B" # Magenta
+valuedbg: "212c2d" # Dark background
+valuedhl: "313c3d" # Dark highlight
+valuedt2: "716c4d" # Dark bg text secondary
+valuedt1: "88a99b" # Dark bg text primary
+valuelbg: "ebebe7" # Light background
+valuelhl: "dbdbd7" # Light highlight
+valuelt2: "7a9297" # Light bg text secondary
+valuelt1: "556d5c" # Light bg text primary
+valuered: "ba6f5b" # Red
+valueora: "a2853a" # Orange
+valueyel: "93a34a" # Yellow
+valuegre: "3d9954" # Green
+valuecya: "38a997" # Cyan
+valueblu: "2a92a5" # Blue
+valuevio: "7a84ba" # Violet
+valuemag: "a77b9b" # Magenta
 
 # Visual order used for colour mapping
-valuep1: "3D9D54" # Green
-valuep2: "48A99B" # Cyan
-valuep3: "A2853A" # Orange
-values1: "93A34A" # Yellow
-values2: "7A99BA" # Violet
-valuet1: "2AA2A5" # Blue
-valuet2: "BA6F5B" # Red
-valuet3: "A77B9B" # Magenta
+valuep1: "3d9954" # Green
+valuep2: "38a997" # Cyan
+valuep3: "a2853a" # Orange
+values1: "93a34a" # Yellow
+values2: "7a84ba" # Violet
+valuet1: "2a92a5" # Blue
+valuet2: "ba6f5b" # Red
+valuet3: "a77b9b" # Magenta
 
 # IMPORTANT Terminal values follow this sequence in the relevant templates:
 # 0=dhl; 1=red; 2=gre; 3=yel; 4=blu; 5=mag; 6=cya; 7=lhl;
