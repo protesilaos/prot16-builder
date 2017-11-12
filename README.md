@@ -1,8 +1,8 @@
 # Prot16 Builder
 
-## A builder for the Prot16 collection of colour schemes
+**DEPRECATED IN FAVOUR OF [prot16-generator](https://github.com/protesilaos/prot16-generator).**
 
-**EXPERIMENTAL. May undergo significant changes. Documentation will be provided accordingly.**
+## A builder for the Prot16 collection of colour schemes
 
 This is a fork of [the Base16 Builder](https://github.com/base16-builder/base16-builder). I have repurposed it to fit my specific need to building ports for my [Prot16 collection](https://protesilaos.com/schemes) of colour schemes.
 
